@@ -5,7 +5,12 @@ class Pig extends BaseClass {
   }
 display()
 {
-  console.log(this.body.speed)
+   if(this.body.speed<2.45){
+    super.display();
+   }
 
-super.display();
-}};
+  else{(World.remove(world,this.body))} 
+
+};
+
+}
